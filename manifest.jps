@@ -113,6 +113,7 @@ onInstall:
   - setupWP
   - setupHyperDB
   - setupLSCWP
+  - SetupCronJob
   
 actions:
 
@@ -153,8 +154,7 @@ actions:
         wp cache flush --path=${SERVER_WEBROOT}
         wget https://raw.githubusercontent.com/tphil/wpcdn/master/urls.txt -O ~/urls.txt
         wget https://raw.githubusercontent.com/tphil/wpcdn/master/checkCdnStatus.sh -O ~/checkCdnStatus.sh
-        chmod +x ~/checkCdnStatus.sh
-        
+        chmod +x ~/checkCdnStatus.sh       
 
   SetupCronJob:
     - cmd[${nodes.cp.master.id}]: wget https://raw.githubusercontent.com/tphil/wpcdn/master/root -O /var/spool/cron/root
