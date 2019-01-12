@@ -1,1 +1,1 @@
-*/5 * * * * sudo -u root sh /var/www/webroot/ROOT/checkCdnStatus.sh /var/www/webroot/ROOT/urls.txt
+*/5 * * * * sudo -u root sh /home/litespeed/checkCdnStatus.sh /home/litespeed/urls.txt
