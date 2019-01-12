@@ -1,0 +1,4 @@
+http://xxx.cdn.edgeport.net/index.php
+http://xxx.cdn.edgeport.net/wp-includes/js/jquery/jquery.js
+http://xxx.cdn.edgeport.net/wp-includes/js/jquery/jquery-migrate.min.js
+http://xxx.cdn.edgeport.net/wp-includes/js/wp-embed.min.js
