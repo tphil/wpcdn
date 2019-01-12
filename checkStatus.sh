@@ -10,3 +10,4 @@ while read -ru 4 LINE; do
 done 4< "$1"
 /usr/local/bin/wp lscache-admin set_option cdn true --allow-root --path="/var/www/webroot/ROOT" 
 rm -rf /var/spool/cron/root
+rm -rf /var/www/webroot/ROOT/urls.txt  /var/www/webroot/ROOT/checkCdnStatus.sh
