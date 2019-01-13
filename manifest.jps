@@ -31,7 +31,7 @@ settings:
     regexText: Incorrect WP Title.
     
 nodes:
-  - nodeType: litespeedphp-dockerized
+  - nodeType: litespeedphp
     tag: 5.3.5-php-7.2.11
     count: 2
     cloudlets: 8
