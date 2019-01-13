@@ -149,7 +149,7 @@ actions:
         wp plugin activate litespeed-cache --path=${SERVER_WEBROOT}
         wget https://raw.githubusercontent.com/tphil/wpcdn/master/LSCWP.cfg -O ~/LSCWP.cfg
         wp lscache-admin import_options ~/LSCWP.cfg --path=${SERVER_WEBROOT}
-        wp search-replace 'https://_ENVNAME_' 'http://${env.envName}' --all-tables --path=${SERVER_WEBROOT}
+        wp search-replace '_ENVNAME_' '${env.envName}' --all-tables --path=${SERVER_WEBROOT}
         wp search-replace '//_ENVDOMAIN_/' '//${env.domain}/' --all-tables --path=${SERVER_WEBROOT}
         wp cache flush --path=${SERVER_WEBROOT}
         wget https://raw.githubusercontent.com/tphil/wpcdn/master/urls.txt -O ~/urls.txt
