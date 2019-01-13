@@ -154,6 +154,7 @@ actions:
         wp cache flush --path=${SERVER_WEBROOT}
         wget https://raw.githubusercontent.com/tphil/wpcdn/master/urls.txt -O ~/urls.txt
         wget https://raw.githubusercontent.com/tphil/wpcdn/master/checkCdnStatus.sh -O ~/checkCdnStatus.sh
+        sed -i 's/XXX/${env.envName}/g' ~/urls.txt
         chmod +x ~/checkCdnStatus.sh       
 
   SetupCronJob:
