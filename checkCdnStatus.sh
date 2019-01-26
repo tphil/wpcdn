@@ -3,9 +3,10 @@ while read -ru 4 LINE; do
     status=`curl $LINE -k -s -f -o /dev/null && echo "SUCCESS" || echo "ERROR"`
     if [ $status = "SUCCESS" ]
     then
-    	echo "Applying CDN configs..."
+        echo "$LINE - OK"
         continue
     else
+        echo "$LINE - KO"
     	echo "CDN is not ready yet."
         exit
     fi
